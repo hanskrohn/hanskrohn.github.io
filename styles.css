@@ -321,6 +321,12 @@ ul li a:hover{
   max-height: 100%;
   display: block;
 }
+.text p{
+  font-size: 25px;
+}
+.projectsDiv ul li{
+  font-size: 20px;
+}
 
 @media (max-width: 1100px) {
   .landing h3{
@@ -342,10 +348,10 @@ ul li a:hover{
     font-size: 20px;
   }
   .text p{
-    font-size: 15px;
+    font-size: 25px;
   }
   .projectsDiv ul li{
-    font-size: 15px;
+    font-size: 20px;
   }
   .img {
     height: 175px;
@@ -355,6 +361,23 @@ ul li a:hover{
 .center{
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 850px){
+  .evenlySpaced{
+    flex-direction: column;
+  }
+  .centerat800{
+    text-align: center;
+  }
+  .projectsDiv ul{
+    float: none;
+  }
+  .projectsDiv ul li{
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -411,14 +434,6 @@ ul li a:hover{
     color: white;
     z-index: 100;
   }
-  .projectsDiv ul li{
-    font-size: 15px;
-    text-align: center;
-    list-style: none;
-  }
-  .centerat800{
-    text-align: center;
-  }
 }
 
 @media (max-width: 650px) {
@@ -441,17 +456,11 @@ ul li a:hover{
     font-size: 17px;
   }
   .text p{
-    font-size: 15px;
-  }
-  .projectsDiv ul{
-    float: none;
+    font-size: 17px;
   }
   .img {
     height: 140px;
     width: 140px;
-  }
-  .evenlySpaced{
-    flex-direction: column;
   }
 }
 
@@ -471,13 +480,13 @@ ul li a:hover{
     font-size: 15px;
   }
   .intro h3{
-    font-size: 20px;
+    font-size: 30px;
   }
   .text h3{
     font-size: 17px;
   }
   .text p{
-    font-size: 15px;
+    font-size: 17px;
   }
   .projectsDiv ul li{
     font-size: 15px;
