@@ -411,6 +411,14 @@ ul li a:hover{
     color: white;
     z-index: 100;
   }
+  .projectsDiv ul li{
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+  }
+  .centerat800{
+    text-align: center;
+  }
 }
 
 @media (max-width: 650px) {
@@ -433,14 +441,17 @@ ul li a:hover{
     font-size: 17px;
   }
   .text p{
-    font-size: 12px;
+    font-size: 15px;
   }
-  .projectsDiv ul li{
-    font-size: 12px;
+  .projectsDiv ul{
+    float: none;
   }
   .img {
     height: 140px;
     width: 140px;
+  }
+  .evenlySpaced{
+    flex-direction: column;
   }
 }
 
@@ -449,7 +460,7 @@ ul li a:hover{
     padding-top: 100px;
   }
   .landing h3{
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .landing h1{
@@ -457,22 +468,23 @@ ul li a:hover{
   }
 
   .landing p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .intro h3{
     font-size: 20px;
   }
   .text h3{
-    font-size: 13px;
+    font-size: 17px;
   }
   .text p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .projectsDiv ul li{
-    font-size: 10px;
+    font-size: 15px;
   }
   .img {
     height: 100px;
     width: 100px;
   }
+
 }
