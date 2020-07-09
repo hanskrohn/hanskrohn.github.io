@@ -1,0 +1,478 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+p{
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+  font-family: 'Roboto Mono', monospace;
+}
+
+h3{
+  font-family: 'Roboto Mono', monospace;
+}
+
+#navbar{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: black;
+  box-sizing: border-box;
+  align-items: center;
+  transition: all .8s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+  padding: 0 20px;
+}
+.hiddenUL{
+  display: none;
+}
+ul{
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  float: right;
+  height: 100%;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li a{
+  color: white;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover{
+  color: #00C8A1;
+  text-decoration: underline;
+}
+
+.leftInfo a i{
+  height: 35px!important;
+  color: white!important;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.leftInfo a i::before{
+  font-size: 35px;
+}
+
+
+.leftInfo a:hover{
+  color: #00C8A1;
+  text-decoration: none;
+}
+
+.logo{
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.leftInfo{
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50px;
+}
+
+.leftInfo a{
+  color: white;
+  font-size: 25px;
+  padding: 20px 10px;
+}
+
+.setWidth{
+  width: 80%;
+}
+
+.vl{
+  margin: 10px auto;
+  border-left: 1px solid white;
+  max-height: 500px;
+  min-height: 500px;
+}
+
+.mainContent{
+  padding-left: 150px;
+}
+
+.block{
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.alignCenter{
+  display: flex;
+  align-items: center;
+}
+
+.landing{
+  padding-left: 10px;
+}
+
+.landing h3{
+  color: white;
+  font-size: 35px;
+  margin: 0;
+}
+
+.landing h1{
+  color: #00C8A1;
+  font-size: 120px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  margin: 0;
+}
+
+.landing p{
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.overlay:hover{
+  cursor: pointer;
+}
+
+.img img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  transition: .4s;
+  transform: scale(1);
+}
+.img img:hover{
+  transform:  scale(1.1);
+}
+
+
+.intro{
+  margin: 0 auto;
+}
+
+.intro h3{
+  color: white;
+  font-size: 50px;
+  margin: 0;
+}
+
+.intro h1{
+  color: white;
+  font-size: 120px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  margin: 0;
+}
+
+.intro p{
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.contactButton{
+  width: 157px!important;
+  border-color: white!important;
+  color: white!important;
+}
+
+.contactButton:hover{
+  color: white!important;
+  background-color: white!important;
+}
+
+.inline{
+  display: inline;
+}
+
+.hrSize{
+  max-width: 400px;
+  min-width: 400px;
+  padding-left: 10px;
+}
+
+.hrSize hr{
+  margin-bottom: 10px;
+  margin-top: 1em;
+  border-top: 1px solid white;
+}
+
+.text{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.text h3{
+  color: white;
+  font-size: 25px;
+}
+
+.padTop100{
+  padding-top: 100px;
+}
+.padTop50{
+  padding-top: 50px;
+}
+.padTop25{
+  padding-top: 25px;
+}
+.padBot50{
+  padding-bottom: 50px;
+}
+.padTop15{
+  padding-top: 15px;
+}
+
+.text p{
+  color: white;
+}
+
+.projectsDiv ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
+
+.projectsDiv ul li{
+  list-style: square;
+  color: white;
+}
+
+.number{
+  color: white!important;
+  font-size: 25px;
+}
+
+.underline{
+  text-decoration: underline!important;
+}
+
+.noUnderline{
+  text-decoration: none!important;
+}
+
+.evenlySpaced{
+  display: flex;
+  justify-content: space-around;
+}
+
+.green{
+  color: #00C8A1!important;
+}
+
+.bar{
+  display: none;
+}
+.link{
+  margin: auto 0;
+  display: block;
+}
+.logoNav{
+  max-width: 60px;
+  min-width: 60px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.logoNav:hover{
+  cursor: pointer;
+}
+
+.logoNav img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .landing h3{
+    font-size: 20px;
+  }
+
+  .landing h1{
+    font-size: 80px;
+  }
+
+  .landing p{
+    font-size: 15px;
+  }
+
+  .intro h3{
+    font-size: 40px;
+  }
+  .text h3{
+    font-size: 20px;
+  }
+  .text p{
+    font-size: 15px;
+  }
+  .projectsDiv ul li{
+    font-size: 15px;
+  }
+  .img {
+    height: 175px;
+    width: 175px;
+  }
+}
+.center{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .mainContent{
+    padding-left:0px;
+  }
+  .setWidth{
+    margin: 0 auto;
+  }
+  .leftInfo{
+    position: relative;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    left: 0;
+    align-content: space-around;
+  }
+  .vl{
+    margin: 0;
+    border-left: 0px solid white;
+    max-height: 0px;
+    min-height: 0px;
+  }
+  .center{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .checkbtn{
+    display: block;
+  }
+  .link{
+    display: none;
+  }
+  .hiddenUL{
+    margin: 0;
+    padding: 0;
+    top: 80px;
+    left: -100%;
+    position: fixed;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s;
+  }
+
+  .hiddenLI{
+    margin: auto auto;
+  }
+
+  .hiddenLI a{
+    color: white;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 650px) {
+  .landing h3{
+    font-size: 20px;
+  }
+
+  .landing h1{
+    font-size: 60px;
+  }
+
+  .landing p{
+    font-size: 15px;
+  }
+
+  .intro h3{
+    font-size: 30px;
+  }
+  .text h3{
+    font-size: 17px;
+  }
+  .text p{
+    font-size: 12px;
+  }
+  .projectsDiv ul li{
+    font-size: 12px;
+  }
+  .img {
+    height: 140px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 500px) {
+  .landing{
+    padding-top: 100px;
+  }
+  .landing h3{
+    font-size: 15px;
+  }
+
+  .landing h1{
+    font-size: 35px;
+  }
+
+  .landing p{
+    font-size: 10px;
+  }
+  .intro h3{
+    font-size: 20px;
+  }
+  .text h3{
+    font-size: 13px;
+  }
+  .text p{
+    font-size: 10px;
+  }
+  .projectsDiv ul li{
+    font-size: 10px;
+  }
+  .img {
+    height: 100px;
+    width: 100px;
+  }
+}

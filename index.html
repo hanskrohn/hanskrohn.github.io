@@ -1,0 +1,149 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./styles.css" rel="stylesheet"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Personal Portfolio"/>
+
+    <title>Hans Krohn</title>
+  </head>
+  <body id="root">
+    <div>
+      <nav id = 'navbar'>
+        <div class = 'logoNav'>
+          <a href = '#landing'><img src = 'logo.png' alt = '>~hk72'/></a>
+        </div>
+        <i class = "checkbtn fa fa-bars" aria-hidden="true" onclick = "bringOutMenuBar()" ></i>
+        <ul id = 'hUL' class = 'hiddenUL'>
+          <li  onclick = "bringOutMenuBar()" class = 'hiddenLI'><a href = '#projects'>Projects</a></li>
+          <li  onclick = "bringOutMenuBar()" class = 'hiddenLI'><a href = '#about'>About</a></li>
+          <li  onclick = "bringOutMenuBar()" class = 'hiddenLI'><a href = '#education'>Education</a></li>
+          <li  onclick = "bringOutMenuBar()" class = 'hiddenLI'><a href = '#skills'>Skills</a></li>
+        </ul>
+        <ul>
+          <li class = 'link'><a href = '#projects'>Projects</a></li>
+          <li class = 'link'><a href = '#about'>About</a></li>
+          <li class = 'link'><a href = '#education'>Education</a></li>
+          <li class = 'link'><a href = '#skills'>Skills</a></li>
+        </ul>
+      </nav>
+      <div id = 'landing' class = 'body'>
+        <div class = 'mainContent'>
+          <div class = 'setWidth'>
+            <div class = 'block alignCenter'>
+              <div class = 'landing'>
+                <h3>Hi, my name is</h3>
+                <h1>Hans Krohn</h1>
+                <p>Student | Passionate Coder</p>
+              </div>
+            </div>
+            <div id = 'projects' class = 'alignCenter padTop50'>
+              <div class = 'intro '>
+                <h3 class ='inline'>hans.</h3>
+                <h3 class = 'inline green'>Projects()</h3>
+                <div class = 'padTop25'>
+                  <a href = 'https://thetechiestore.herokuapp.com/'>
+                    <div class = 'img overlay'>
+                      <img src = 'theTechieStore.png' alt = 'The Techie Store'/>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class = 'padTop100'>
+            </div>
+            <div id = 'about' class = 'alignCenter padTop50'>
+              <div class = 'intro'>
+                <h3 class ='inline'>hans.</h3>
+                <h3 class = 'inline green'>About()</h3>
+              </div>
+            </div>
+            <div class = 'text'>
+              <p>
+                Hi! I'm Hans, a Software Engineering Student at Western University and a
+                graduate from FlatIron School, a coding Bootcamp.
+              </p>
+              <p>
+                I have always had a passion to make ideas a reality. With code, I have been able to make
+                ideas tangible. I hope to continue to improving
+                and learning in this ever changing field.
+              </p>
+            </div>
+            <div class = 'padTop100'>
+            </div>
+            <div id = 'education' class = 'alignCenter padTop50'>
+              <div class = 'intro'>
+              <h3 class ='inline'>hans.</h3>
+              <h3 class = 'inline green'>Education()</h3>
+              </div>
+            </div>
+            <div class = 'text'>
+              <div class = 'padTop25'>
+                <h3 class = 'inline number'>Western University</h3>
+                <h3 class = 'inline noUnderline'> - London ON</h3>
+                <p class = 'padTop15'>Bachelor of Software Engineering - May 2022 (Expected Graduation Date)</p>
+              </div>
+              <div class = 'padTop25'>
+                <h3 class = 'inline number'>FlatIron School</h3>
+                <h3 class = 'inline noUnderline'> - Houston TX</h3>
+                <p class = 'padTop15'>Software Engineering Bootcamp - May 2019 - August 2019</p>
+              </div>
+            </div>
+            <div class = 'padTop100'>
+            </div>
+            <div id = 'skills' class = 'alignCenter padTop50'>
+              <div class = 'intro'>
+                <h3 class ='inline'>hans.</h3>
+                <h3 class = 'inline green'>Skills()</h3>
+              </div>
+            </div>
+            <div class = 'projectsDiv evenlySpaced padBot50'>
+              <div class = 'text padTop25'>
+                <p>Languages:</p>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML/CSS</li>
+                  <li>Java</li>
+                  <li>Ruby</li>
+                </ul>
+              </div>
+              <div class = 'text padTop25'>
+                <p>Frameworks:</p>
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>ReactJS</li>
+                </ul>
+              </div>
+              <div class = 'text padTop25'>
+                <p>Other Tools:</p>
+                <ul>
+                  <li>Redux</li>
+                  <li>NodeJS</li>
+                  <li>Unity</li>
+                  <li>MongoDB</li>
+                  <li>SQL</li>
+                  <li>Github</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = 'leftInfo'>
+          <div class = 'center'>
+            <a href = 'https://github.com/hk72'><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href = 'https://www.linkedin.com/in/hans-krohn-b7488b18a/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href = 'mailto:hk72.contact@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            <div class = 'vl'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>
