@@ -44,6 +44,9 @@ h3{
 .hiddenUL{
   display: none;
 }
+.flexJustifyContentSpaceBetween{
+  justify-content: space-between;
+}
 
 .specialUL{
 height: 15%;
@@ -59,7 +62,13 @@ ul{
 ul li{
   list-style: none;
 }
+.flexrtoc{
+  flex-direction: row;
+}
 
+.flex{
+  display: flex;
+}
 ul li a{
   color: white;
   padding: 0 20px;
@@ -385,6 +394,9 @@ ul li a:hover{
 }
 
 @media (max-width: 800px) {
+  .flexrtoc{
+    flex-direction: column;
+  }
   .mainContent{
     padding-left:0px;
   }
