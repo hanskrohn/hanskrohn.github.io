@@ -41,6 +41,10 @@ h3{
   display: none;
   padding: 0 20px;
 }
+
+.subField{
+  padding-left: 0;
+}
 .hiddenUL{
   display: none;
 }
@@ -142,6 +146,10 @@ ul li a:hover{
 .alignCenter{
   display: flex;
   align-items: center;
+}
+
+.name{
+  padding-left: 10px;
 }
 
 .landing{
@@ -520,4 +528,10 @@ ul li a:hover{
     width: 100px;
   }
 
+}
+
+@media (max-width: 378px) {
+  .subField{
+    padding-left: 10px;
+  }
 }
