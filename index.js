@@ -10,19 +10,19 @@ window.addEventListener('scroll', () => {
   if(scrollTop === 0){
     navbar.style.boxShadow = 'none';
     navbar.style.top = '0px';
-    navbar.style.backgroundColor = "rgba(0, 0, 0, 0.0)"
+    navbar.style.backgroundColor = "rgba(33, 33, 33, 0.0)"
     logo.style.display = "none"
   }
   else if(scrollTop > lastScrollTop){
     navbar.style.top = '-80px';
     navbar.style.boxShadow = 'none';
-    navbar.style.backgroundColor = "rgba(0, 0, 0, 1.0)"
+    navbar.style.backgroundColor = "rgba(33, 33, 33, 1.0)"
     logo.style.display = "none"
   }
   else{
     navbar.style.top = '0px';
-    navbar.style.boxShadow = '0px 3px 15px black';
-    navbar.style.backgroundColor = "rgba(0, 0, 0, 1.0)"
+    navbar.style.boxShadow = '0px 3px 15px white';
+    navbar.style.backgroundColor = "rgba(33, 33, 33, 1.0)"
     logo.style.display = "inline"
   }
 
@@ -57,20 +57,20 @@ const init = () => {
   const nameElem = document.getElementById('name')
 
   introElem.style.borderRight = "2px solid #777777";
-  new SingleWord(introElem, intro, 275);
+  new SingleWord(introElem, intro, 100);
 
   setTimeout(() => {
     introElem.style.borderRight = "0px";
     nameElem.style.borderRight = "2px solid #777777";
-    new SingleWord(nameElem, myName, 300);
-  }, 4300)
+    new SingleWord(nameElem, myName, 150);
+  }, 100 * 14 + 50)
 
   setTimeout(() => {
     nameElem.style.borderRight = "0px";
     const descriptionElement = document.getElementById('description')
     descriptionElement.style.borderRight = "2px solid #777777";
     new WordArray(descriptionElement, description)
-  }, 7900)
+  }, (100 * 14 + 50) + (150 * 10 + 50))
 }
 
 SingleWord.prototype.typeStatic = function() {
@@ -97,7 +97,7 @@ WordArray.prototype.typeDynamic = function() {
 
   this.element.innerHTML = this.txt
   
-  let typeSpeed = 300;
+  let typeSpeed = 200;
 
   
   if(!this.isDeleting && this.txt === fullTxt){
