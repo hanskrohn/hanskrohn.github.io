@@ -34,6 +34,7 @@ nav{
   transition: all .5s;
   z-index: 5;
   top: 0;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 .navigation {
@@ -42,6 +43,7 @@ nav{
 }
 
 .logo{
+  display: none;
   max-width: 60px;
   min-width: 60px;
   margin-left: 30px;
@@ -61,7 +63,7 @@ nav{
 }
 .webView li{
   margin-right: 40px;
-  color: black;
+  color: white;
 }
 
 .mobileView{
@@ -71,12 +73,12 @@ nav{
 
 .checkbtn{
   font-size: 30px;
-  color: black;
+  color: white;
   float: right;
   line-height: 80px;
   cursor: pointer;
   display: none;
-  padding: 0 20px;
+  margin: 0 30px;
 }
 
 @media (max-width: 800px) {
@@ -92,4 +94,19 @@ nav{
   .checkbtn{
     display: inline;
   }
+}
+
+
+/* ---------------------------//----------------------
+                        Landing
+----------------------------//----------------------- */
+
+.landing{
+  background-image: url("./BackgroundCode.png");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
