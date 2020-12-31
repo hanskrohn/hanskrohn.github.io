@@ -47,35 +47,40 @@ const WordArray = function(element, words){
   this.words = words
   this.txt = ''
   this.index = 0
+  this.blinks = 0
   this.isDeleting = false;
   this.typeDynamic()
 }
 
 const init = () => {
-  new SingleWord(document.getElementById('intro'), intro, 275);
+  const introElem = document.getElementById('intro')
+  const nameElem = document.getElementById('name')
+
+  introElem.style.borderRight = "2px solid #777777";
+  new SingleWord(introElem, intro, 275);
 
   setTimeout(() => {
-    new SingleWord(document.getElementById('name'), myName, 300);
-  }, 3950)
+    introElem.style.borderRight = "0px";
+    nameElem.style.borderRight = "2px solid #777777";
+    new SingleWord(nameElem, myName, 300);
+  }, 4300)
 
   setTimeout(() => {
+    nameElem.style.borderRight = "0px";
     const descriptionElement = document.getElementById('description')
     descriptionElement.style.borderRight = "2px solid #777777";
     new WordArray(descriptionElement, description)
-  }, 6800)
+  }, 7900)
 }
 
 SingleWord.prototype.typeStatic = function() {
   const fullTxt = this.word
 
-  this.element.style.borderRight = "2px solid #777777";
   this.txt = fullTxt.substring(0, this.txt.length + 1)
   
   this.element.innerHTML = this.txt
   if(this.txt !== fullTxt){
     setTimeout(() => this.typeStatic(), this.speed)
-  }else{
-    this.element.style.borderRight = "0px"; 
   }
 }
 
@@ -96,19 +101,32 @@ WordArray.prototype.typeDynamic = function() {
 
   
   if(!this.isDeleting && this.txt === fullTxt){
-    console.log('waiting before deleting')
     typeSpeed = 3000
     this.isDeleting = true
+    this.blink()
   }else if(this.isDeleting && this.txt === ''){
-    console.log('reseting')
     this.isDeleting = false
     this.index++
     typeSpeed = 200
   }else if(this.isDeleting){
     typeSpeed /= 2
   }
-  console.log(this.txt === '')
+
   setTimeout(() => this.typeDynamic(), typeSpeed)
+}
+
+WordArray.prototype.blink = function() {
+  if(this.blinks < 5){
+    if(this.blinks % 2 == 0){
+      this.element.style.borderRight = "2px solid #777777";
+    }else{
+      this.element.style.borderRight = "0px";
+    }
+    this.blinks++
+    setTimeout(() => this.blink(), 650)
+  }else{
+    this.blinks = 0
+  }
 }
 
 document.addEventListener('DOMContentLoaded', init);
