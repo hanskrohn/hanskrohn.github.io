@@ -73,6 +73,7 @@ a{
   }
 }
 
+
 /* -----------------------------//-------------------------
                           nav Component
 ----------------------------//-------------------------- */
@@ -390,6 +391,16 @@ nav{
 }
 
 @media (max-width: 800px) {
+  .flexColumn{
+    flex-direction: column;
+  }
+
+  .flex33 ul{
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 
 /* -----------------//---------------
@@ -405,6 +416,7 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 .format{
@@ -427,4 +439,29 @@ nav{
 }
 
 @media (max-width: 800px) {
+  .aside{
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+  }
+  .format{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 35px;
+    justify-content: space-evenly;
+    position: static;
+  }
+
+  .format a{
+    margin: 20px 0;
+  }
+
+  .vl{
+    display: none;
+  }
 }
