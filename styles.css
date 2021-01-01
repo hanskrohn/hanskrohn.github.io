@@ -26,6 +26,11 @@ ul{
   cursor: pointer;
 }
 
+.pointer:hover{
+  color: #00C8A1;
+  text-decoration: underline;
+}
+
 .marginLeft5Percent{
   margin-left: 5%;
 }
@@ -50,9 +55,13 @@ hr{
   flex-direction: column;
 }
 
+a{
+  color: white;
+}
+
 @media (max-width: 1100px) {
   h3{
-    font-size: 20px;
+    font-size: 30px;
     margin: 0 5px;
   }
   hr{
@@ -71,7 +80,7 @@ nav{
   transition: all .5s;
   z-index: 5;
   top: 0;
-  background-color: #212121;
+  background-color: rgba(33, 33, 33, 0.0);
 }
 
 .navigation {
@@ -296,6 +305,61 @@ nav{
 
 .icons i{
   font-size: 20px;
+}
+
+.technologies{
+  font-size: 13px;
+}
+
+.flex50{
+  flex: 50%;
+}
+
+.justifyCenter{
+  justify-content: center;
+}
+
+.education{
+  width: 100%;
+  color: white;
+}
+
+.education h4{
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.education p {
+  font-size: 15px;
+}
+
+.flex33{
+  flex: 33%;
+  color: white;
+}
+
+.width100{
+  width: 100%;
+}
+
+.flex33 h4{
+  font-size: 25px;
+}
+
+.flex33 ul{
+  list-style-type: square;
+  list-style-position: inside;
+  align-items: flex-start;
+}
+
+.spaceTop{
+  margin-top: 25px;
+}
+
+.centerSkills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
