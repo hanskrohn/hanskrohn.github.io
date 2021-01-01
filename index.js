@@ -53,6 +53,15 @@ const WordArray = function(element, words){
 }
 
 const init = () => {
+  const aside = document.getElementById('aside')
+
+  setTimeout(() => {
+    aside.innerHTML = `<a data-aos="fade-right" data-aos-once="true" data-aos-delay="0" class = "pointer" href = 'https://github.com/hk72'><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a data-aos="fade-right" data-aos-once="true" data-aos-delay="150" class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn-b7488b18a/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a data-aos="fade-right" data-aos-once="true" data-aos-delay="250" class = "pointer" href = 'mailto:hanskrohn70@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        <div data-aos="fade-up" data-aos-once="true" data-aos-delay="350" class="vl"></div>`
+  }, (100 * 14 + 50) + (150 * 10 + 50))
+  
   const introElem = document.getElementById('intro')
   const nameElem = document.getElementById('name')
 
