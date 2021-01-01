@@ -57,9 +57,9 @@ const init = () => {
   if(window.innerWidth > 800){
     setTimeout(() => {
       aside.innerHTML = `<a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="0" class = "pointer" href = 'https://github.com/hk72'><i class="fa fa-github" aria-hidden="true"></i></a>
-                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="0" class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn-b7488b18a/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="0" class = "pointer" href = 'mailto:hanskrohn70@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                          <div data-aos="fade-up" data-aos-offset="0" data-aos-once="true" data-aos-delay="0" class="vl"></div>`
+                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="150" class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn-b7488b18a/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="300" class = "pointer" href = 'mailto:hanskrohn70@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                          <div data-aos="fade-up" data-aos-offset="0" data-aos-once="true" data-aos-delay="450" class="vl"></div>`
     }, (100 * 14 + 50) + (150 * 10 + 50))
   }else{
     aside.innerHTML = `<a class = "pointer" href = 'https://github.com/hk72'><i class="fa fa-github" aria-hidden="true"></i></a>

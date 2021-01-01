@@ -59,6 +59,10 @@ a{
   color: white;
 }
 
+button{
+  outline:none;
+}
+
 .noUnderline{
   text-decoration: none !important;
 }
@@ -200,7 +204,7 @@ nav{
   position: absolute;
   border-radius: 50%;
   bottom: 25px;
-  left: 50%;
+  left: calc(50% - 30px);
   width: 60px;
   height: 60px;
   background-color: rgba(33, 33, 33, 0.0);
@@ -390,6 +394,10 @@ nav{
   margin: 60px 0px 30px 0px;
 }
 
+.mobileButtons{
+  display: none;
+}
+
 @media (max-width: 800px) {
   .flexColumn{
     flex-direction: column;
@@ -400,6 +408,40 @@ nav{
     list-style-position: inside;
     text-align: center;
     margin-bottom: 15px;
+  }
+
+  #flexDirectionColumForMobile{
+    flex-direction: column;
+  }
+
+  .card{
+    height: 100%;
+  }
+
+  .end{
+    justify-content: flex-start;
+  }
+
+  .end i {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+
+  .mobileButtons{
+    display: inline;
+    padding: 10px 20px;
+    background-color: rgba(33, 33, 33, 0.0);
+    border: 2px solid rgb(155, 155, 155);
+    font-size: 15px;
+    border-radius: 5px;
+    color: rgb(155, 155, 155);
+  }
+
+  .mobileButtons:hover{
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    text-decoration: none !important;
   }
 }
 
