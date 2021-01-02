@@ -64,7 +64,7 @@ const init = () => {
     aside.innerHTML = `<a class = "pointer" href = 'https://github.com/hk72'><i class="fa fa-github" aria-hidden="true"></i></a>
                         <a class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn-b7488b18a/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         <a class = "pointer" href = 'mailto:hanskrohn70@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                        <div " class="vl"></div>`
+                        <div class="vl"></div>`
   }
   
   const introElem = document.getElementById('intro')
