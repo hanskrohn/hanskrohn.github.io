@@ -6,7 +6,6 @@ window.addEventListener('scroll', () => {
   const logo = document.querySelector('.logo')
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop
 
-  console.log(scrollTop, lastScrollTop)
   if(scrollTop === 0){
     navbar.style.boxShadow = 'none';
     navbar.style.top = '0px';
@@ -145,3 +144,38 @@ WordArray.prototype.blink = function() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+window.smoothScroll = function(target) {
+  var scrollContainer = target;
+  do { //find scroll container
+      scrollContainer = scrollContainer.parentNode;
+      if (!scrollContainer) return;
+      scrollContainer.scrollTop += 1;
+  } while (scrollContainer.scrollTop == 0);
+
+  var targetY = 0;
+  do { //find the top of target relatively to the container
+      if (target == scrollContainer) break;
+      targetY += target.offsetTop;
+  } while (target = target.offsetParent);
+
+  scroll = function(c, a, b, i) {
+      i++; if (i > 30) return;
+      c.scrollTop = a + (b - a) / 30 * i;
+      setTimeout(function(){ scroll(c, a, b, i); }, 20);
+  }
+  // start scrolling
+  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+const popup = document.getElementById('popup')
+const body = document.querySelector("body")
+const closeMenuBar = () => {
+  popup.style.right = "100%"
+  body.style.overflowY = "auto"
+}
+
+const showMenuBar = () => {
+  popup.style.right = "0%"
+  body.style.overflowY = "hidden"
+}

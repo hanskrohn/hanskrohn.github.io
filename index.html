@@ -23,15 +23,25 @@
         </div>
         <div class = "webView">
           <ul class = "flex">
-            <li class = "pointer" >Projects</li>
-            <li class = "pointer" >About</li>
-            <li class = "pointer" >Education</li>
-            <li class = "pointer" >Skills</li>
-            <li class = "pointer" >Resume</li>
+            <li class = "pointer" onclick="smoothScroll(document.getElementById('projects'))" >Projects</li>
+            <li class = "pointer" onclick="smoothScroll(document.getElementById('about'))">About</li>
+            <li class = "pointer" onclick="smoothScroll(document.getElementById('education'))">Education</li>
+            <li class = "pointer" onclick="smoothScroll(document.getElementById('skills'))">Skills</li>
+            <li class = "pointer" ><a class = "noUnderline pointer" href = "./Resume.pdf">Resume</a></li>
           </ul>
         </div>
         <div class = "mobileView">
-          <i class = "checkbtn fa fa-bars" aria-hidden="true" ></i>
+          <i class = "checkbtn fa fa-bars" aria-hidden="true" onclick="showMenuBar()"></i>
+          <div id="popup"> 
+            <i class="far fa-times-circle" aria-hidden="true" onclick="closeMenuBar()"></i>
+            <ul>
+              <li class = "pointer" onclick="smoothScroll(document.getElementById('projects')); closeMenuBar();" >Projects</li>
+              <li class = "pointer" onclick="smoothScroll(document.getElementById('about')); closeMenuBar();">About</li>
+              <li class = "pointer" onclick="smoothScroll(document.getElementById('education')); closeMenuBar();">Education</li>
+              <li class = "pointer" onclick="smoothScroll(document.getElementById('skills')); closeMenuBar();">Skills</li>
+              <li class = "pointer" ><a class = "noUnderline pointer" href = "./Resume.pdf">Resume</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -44,7 +54,7 @@
           <h1 ><span class = "txt colorGreen" id = "name"></span></h1>
           <p><span class = "txt" id = "description"></span></p>
         </div>
-        <button><i class="fas fa-chevron-down"></i></button>
+        <button onclick="smoothScroll(document.getElementById('projects'))"><i class="fas fa-chevron-down"></i></button>
       </div>
       <div class = "container">
         <div class = "subtitle flex" id = "projects">
@@ -110,7 +120,7 @@
             <a class = "noUnderline" href = "https://github.com/hk72"><button class = "pointer mobileButtons" data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">Visit Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
           </div>
         </div>
-        <div class = "subtitle flex">
+        <div class = "subtitle flex" id = "about">
           <div>
             <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">About</h3>
             <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
@@ -134,7 +144,7 @@
             </div>
           </div>
         </div>
-        <div class = "subtitle flex">
+        <div class = "subtitle flex" id = "education">
           <div>
             <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Education</h3>
             <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
@@ -146,7 +156,7 @@
             <p>Software Engineering Bootcamp - May 2019 - August 2019</p>
           </div>
         </div>
-        <div class = "subtitle flex">
+        <div class = "subtitle flex" id = "skills">
           <div>
             <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Skills</h3>
             <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
