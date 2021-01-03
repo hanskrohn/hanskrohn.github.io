@@ -33,6 +33,10 @@ ul{
   text-decoration: underline;
 }
 
+.colorGreen{
+  color: #00C8A1;
+}
+
 .marginLeft5Percent{
   margin-left: 8%;
 }
