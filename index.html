@@ -27,7 +27,7 @@
             <li class = "pointer" onclick="smoothScroll(document.getElementById('about'))">About</li>
             <li class = "pointer" onclick="smoothScroll(document.getElementById('education'))">Education</li>
             <li class = "pointer" onclick="smoothScroll(document.getElementById('skills'))">Skills</li>
-            <li class = "pointer" ><a class = "noUnderline pointer" href = "./Resume.pdf">Resume</a></li>
+            <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1v2ypc7KhFrerpOH34RISsU-uY1mUKcc3tWjuAqxUego/edit?usp=sharing">Resume</a></li>
           </ul>
         </div>
         <div class = "mobileView">
@@ -39,7 +39,7 @@
               <li class = "pointer" onclick="smoothScroll(document.getElementById('about')); closeMenuBar();">About</li>
               <li class = "pointer" onclick="smoothScroll(document.getElementById('education')); closeMenuBar();">Education</li>
               <li class = "pointer" onclick="smoothScroll(document.getElementById('skills')); closeMenuBar();">Skills</li>
-              <li class = "pointer" ><a class = "noUnderline pointer" href = "./Resume.pdf">Resume</a></li>
+              <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1v2ypc7KhFrerpOH34RISsU-uY1mUKcc3tWjuAqxUego/edit?usp=sharing">Resume</a></li>
             </ul>
           </div>
         </div>
@@ -57,6 +57,44 @@
         <button onclick="smoothScroll(document.getElementById('projects'))"><i class="fas fa-chevron-down"></i></button>
       </div>
       <div class = "container">
+        <div class = "subtitle flex" id = "work-experience">
+            <div>
+              <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Work Experience</h3>
+              <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+            </div>
+            <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
+                <div class="flex60">
+                  <div class = "content">
+                    <h4>Microsoft Software Engineering Intern</h4>
+                    <p>
+                        Worked closely with other engineers on the team to develop a UI for the project. The UI I created is currently the only way to visualize the project and will be a major developer tool moving forwards.
+                    </p>
+                    <p class = "technologies">May 2021 - August 2021</p>
+                  </div>
+                </div>
+                <div class="flex40 flex">
+                  <div class = "image">
+                    <img src = "./images/microsoftLogo.png" alt = "Microsoft"/>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
+            <div class="flex40 flex">
+                 <div class = "image">
+                    <img src = "./images/iveyFintech.jpg" alt = "Ivey Fintech"/>
+                </div>
+            </div>
+            <div class="flex60">
+                <div class = "content">
+                    <h4>Ivey FinTech Innovation</h4>
+                    <p>
+                      Worked with a group of Software Engineering and Computer Science students to develop a web app for Community Living London.
+                    </p>
+                    <p class = "technologies">October 2020 - July 2021</p>
+                </div>
+            </div>
+        </div>
         <div class = "subtitle flex" id = "projects">
           <div>
             <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Projects</h3>
