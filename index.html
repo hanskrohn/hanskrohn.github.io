@@ -17,33 +17,6 @@
   </head>
   <body id="root">
     <nav>
-      <div class = "navigation flex">
-        <div class = "logo">
-          <img class = "pointer" src = './images/logo.png' alt = '>~hk72'/>
-        </div>
-        <div class = "webView">
-          <ul class = "flex">
-            <li class = "pointer" onclick="smoothScroll(document.getElementById('projects'))" >Projects</li>
-            <li class = "pointer" onclick="smoothScroll(document.getElementById('about'))">About</li>
-            <li class = "pointer" onclick="smoothScroll(document.getElementById('education'))">Education</li>
-            <li class = "pointer" onclick="smoothScroll(document.getElementById('skills'))">Skills</li>
-            <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1v2ypc7KhFrerpOH34RISsU-uY1mUKcc3tWjuAqxUego/edit?usp=sharing">Resume</a></li>
-          </ul>
-        </div>
-        <div class = "mobileView">
-          <i class = "checkbtn fa fa-bars" aria-hidden="true" onclick="showMenuBar()"></i>
-          <div id="popup"> 
-            <i class="far fa-times-circle" aria-hidden="true" onclick="closeMenuBar()"></i>
-            <ul>
-              <li class = "pointer" onclick="smoothScroll(document.getElementById('projects')); closeMenuBar();" >Projects</li>
-              <li class = "pointer" onclick="smoothScroll(document.getElementById('about')); closeMenuBar();">About</li>
-              <li class = "pointer" onclick="smoothScroll(document.getElementById('education')); closeMenuBar();">Education</li>
-              <li class = "pointer" onclick="smoothScroll(document.getElementById('skills')); closeMenuBar();">Skills</li>
-              <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1v2ypc7KhFrerpOH34RISsU-uY1mUKcc3tWjuAqxUego/edit?usp=sharing">Resume</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </nav>
     <div>
       <div id = "landing">
@@ -54,134 +27,22 @@
           <h1 ><span class = "txt colorGreen" id = "name"></span></h1>
           <p><span class = "txt" id = "description"></span></p>
         </div>
-        <button onclick="smoothScroll(document.getElementById('projects'))"><i class="fas fa-chevron-down"></i></button>
+        <button onclick="smoothScroll(document.getElementById('work-experience'))"><i class="fas fa-chevron-down"></i></button>
       </div>
       <div class = "container">
         <div class = "subtitle flex" id = "work-experience">
-            <div>
-              <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Work Experience</h3>
-              <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
-            </div>
-            <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-                <div class="flex60">
-                  <div class = "content">
-                    <h4>Microsoft Software Engineering Intern</h4>
-                    <p>
-                        Worked closely with other engineers on the team to develop a UI for the project. The UI I created is currently the only way to visualize the project and will be a major developer tool moving forward.
-                    </p>
-                    <p class = "technologies">May 2021 - August 2021</p>
-                  </div>
-                </div>
-                <div class="flex40 flex">
-                  <div class = "image">
-                    <img src = "./images/microsoftLogo.png" alt = "Microsoft"/>
-                  </div>
-                </div>
-            </div>
-        <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-            <div class="flex40 flex">
-                <div class = "image">
-                    <img src = "./images/iveyFintech.jpg" alt = "Ivey Fintech"/>
-                </div>
-            </div>
-            <div class="flex60">
-                <div class = "content">
-                    <h4>Ivey FinTech Innovation</h4>
-                    <p>
-                      Worked with a group of Software Engineering and Computer Science students to develop a web app for Community Living London.
-                    </p>
-                    <p class = "technologies">October 2020 - July 2021</p>
-                </div>
-            </div>
-        </div>
+          <div>
+            <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Work Experience</h3>
+            <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+          </div>
+          <div id="experiences">
+          </div>
         <div class = "subtitle flex" id = "projects">
           <div>
             <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Projects</h3>
             <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
           </div>
-          <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-            <div class="flex60">
-              <div class = "content">
-                <h4>Tracker</h4>
-                <p>
-                  A web app I developed to help users quickly create and manage charts. Users 
-                  can quickly create projects and view the data with their choice of four graph styles:
-                  Bar, Pie, Polar, and line.
-                </p>
-                <p class = "technologies">NodeJS | MongoDB | ReactJS</p>
-                <div class = "flex icons start">
-                  <a class = "pointer" href="https://thetechiechart.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
-                  <a class = "pointer" href = "https://github.com/hanskrohn/Tracker-Frontend"><i class="fa fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="flex40 flex">
-              <div class = "image">
-                <img src = "./images/tracker.png" alt = "Tracker"/>
-              </div>
-            </div>
-          </div>
-          <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-            <div class="flex40 flex">
-              <div class = "image">
-                <img src = "./images/Game Board.png" alt = "GameBoard"/>
-              </div>
-            </div>
-            <div class="flex60">
-              <div class = "content">
-                <h4>Game Board</h4>
-                <p>
-                  A simple Tic Tac Toe game where users can play in a local match or against the computer. Currently, the game only has one level. 
-                  Using the Minimax algorithm the computer is sure to win or tie. Don't belive me? Try it yourself!
-                </p>
-                <p class = "technologies">Vanilla JS | HTML | CSS</p>
-                <div class = "flex icons end">
-                  <a class = "pointer" href = "https://hanskrohn.github.io/GameBoard/"><i class="fas fa-external-link-alt"></i></a>
-                  <a class = "pointer" href = "https://github.com/hanskrohn/GameBoard"><i class="fa fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-            <div class="flex60">
-              <div class = "content">
-                <h4>E-commerce</h4>
-                <p>
-                  A tech e-commerce site I developed. I used this project to expand on my web development knowledge. I mainly focused on the user experience, by creating visually appealing animations.
-                </p>
-                <p class = "technologies">NodeJS | MongoDB | ReactJS</p>
-                <div class = "flex icons start">
-                  <a class = "pointer" href = "https://thetechiestore.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
-                  <a class = "pointer" href = "https://github.com/hanskrohn/TheTechieStore-FrontEnd"><i class="fa fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="flex40 flex">
-              <div class = "image">
-                <img src = "./images/eccomerce.png" alt = "E-commerce"/>
-              </div>
-            </div>
-          </div>
-          <div id = "flexDirectionColumForMobile" class = "card flex" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-            <div class="flex40 flex">
-              <div class = "image">
-                <img src = "./images/High or low.png" alt = "High or Low"/>
-              </div>
-            </div>
-            <div class="flex60">
-              <div class = "content">
-                <h4>High or Low</h4>
-                <p>
-                  Web version of a the card game "Higher or Lower". Users can create rooms, and play 
-                  versus their friends live.
-                </p>
-                <p class = "technologies">NodeJS | SocketIO | AngularJS</p>
-                <div class = "flex icons end">
-                  <a class = "pointer" href = "https://high-or-low-game.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
-                  <a class = "pointer" href = "https://github.com/hanskrohn/HighOrLowFrontEnd"><i class="fa fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
+          <div id="apps">
           </div>
           <div class = "flex justifyCenter">
             <a class = "noUnderline" href = "https://github.com/hanskrohn"><button class = "pointer mobileButtons" data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">Visit Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
@@ -276,7 +137,10 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="./scripts/scroll.js"></script>
+    <script type="text/javascript" src="./scripts/workExperience.js"></script>
+    <script type="text/javascript" src="./scripts/projects.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
