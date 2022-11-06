@@ -1,9 +1,7 @@
-
-
 // Init on DOM Load
 const intro = "Hi, my name is";
 const myName = "Hans Krohn";
-const description = ["Student", "Passionate Coder"];
+const description = ["Software Engineer", "Life long learner", "Passionate Coder"];
 
 const SingleWord = function(element, word, speed){
   this.speed = speed
