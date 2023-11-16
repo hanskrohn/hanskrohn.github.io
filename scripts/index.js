@@ -1,7 +1,7 @@
 // Init on DOM Load
 const intro = "Hi, my name is";
 const myName = "Hans Krohn";
-const description = ["Software Engineer", "Life long learner", "Passionate Coder"];
+const description = ["Software Engineer", "Life long learner", "Passionate Coder", "Clean code Enthusiast"];
 
 const SingleWord = function(element, word, speed){
   this.speed = speed
@@ -26,14 +26,14 @@ const init = () => {
   if(window.innerWidth > 800){
     setTimeout(() => {
       aside.innerHTML = `<a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="0" class = "pointer" href = 'https://github.com/hanskrohn'><i class="fa fa-github" aria-hidden="true"></i></a>
-                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="150" class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn-b7488b18a/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="300" class = "pointer" href = 'mailto:hanskrohn70@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="150" class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                          <a data-aos="fade-right" data-aos-offset="0" data-aos-once="true" data-aos-delay="300" class = "pointer" href = 'mailto:hanskrohn70@outlook.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                           <div data-aos="fade-up" data-aos-offset="0" data-aos-once="true" data-aos-delay="450" class="vl"></div>`
     }, (100 * 14 + 50) + (150 * 10 + 50))
   }else{
     aside.innerHTML = `<a class = "pointer" href = 'https://github.com/hanskrohn'><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn-b7488b18a/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a class = "pointer" href = 'mailto:hanskrohn70@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        <a class = "pointer" href = 'https://www.linkedin.com/in/hans-krohn'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a class = "pointer" href = 'mailto:hanskrohn70@outlook.com'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                         <div class="vl"></div>`
   }
   

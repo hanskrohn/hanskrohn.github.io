@@ -11,7 +11,7 @@ navbar.innerHTML =
       <li class = "pointer" onclick="smoothScroll(document.getElementById('about'))">About</li>
       <li class = "pointer" onclick="smoothScroll(document.getElementById('education'))">Education</li>
       <li class = "pointer" onclick="smoothScroll(document.getElementById('skills'))">Skills</li>
-      <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1v2ypc7KhFrerpOH34RISsU-uY1mUKcc3tWjuAqxUego/edit?usp=sharing">Resume</a></li>
+      <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1PL5yrsOxB5NR3YaF8XfbL-CTgIfvCr4bk1pz9Avxxfc/edit?usp=sharing">Resume</a></li>
     </ul>
   </div>
   <div class = "mobileView">
@@ -23,7 +23,7 @@ navbar.innerHTML =
         <li class = "pointer" onclick="smoothScroll(document.getElementById('about')); closeMenuBar();">About</li>
         <li class = "pointer" onclick="smoothScroll(document.getElementById('education')); closeMenuBar();">Education</li>
         <li class = "pointer" onclick="smoothScroll(document.getElementById('skills')); closeMenuBar();">Skills</li>
-        <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1v2ypc7KhFrerpOH34RISsU-uY1mUKcc3tWjuAqxUego/edit?usp=sharing">Resume</a></li>
+        <li class = "pointer" ><a class = "noUnderline pointer" href = "https://docs.google.com/document/d/1PL5yrsOxB5NR3YaF8XfbL-CTgIfvCr4bk1pz9Avxxfc/edit?usp=sharing">Resume</a></li>
       </ul>
     </div>
   </div>
