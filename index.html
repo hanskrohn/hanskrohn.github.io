@@ -1,99 +1,230 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type = "image/png" href="./images/logo.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1280792833.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <link href="./styles.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1280792833.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="./styles.css" rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Personal Portfolio"/>
+    <meta name="description" content="Personal Portfolio" />
 
     <title>Hans Krohn</title>
   </head>
   <body id="root">
-    <nav>
-    </nav>
+    <nav></nav>
     <div>
-      <div id = "landing">
-        <div class = "backgroundImage">
+      <div id="landing">
+        <div class="backgroundImage"></div>
+        <div class="landing flex marginLeft5Percent">
+          <h3><span class="txt" id="intro"></span></h3>
+          <h1><span class="txt colorGreen" id="name"></span></h1>
+          <p><span class="txt" id="description"></span></p>
         </div>
-        <div class = "landing flex marginLeft5Percent">
-          <h3 ><span class = "txt" id = "intro"></span></h3>
-          <h1 ><span class = "txt colorGreen" id = "name"></span></h1>
-          <p><span class = "txt" id = "description"></span></p>
-        </div>
-        <button onclick="smoothScroll(document.getElementById('work-experience'))"><i class="fas fa-chevron-down"></i></button>
+        <button
+          onclick="smoothScroll(document.getElementById('work-experience'))"
+        >
+          <i class="fas fa-chevron-down"></i>
+        </button>
       </div>
-      <div class = "container">
-        <div class = "subtitle flex" id = "work-experience">
+      <div class="container">
+        <div class="subtitle flex" id="work-experience">
           <div>
-            <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Work Experience</h3>
-            <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+            <h3
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-once="true"
+            >
+              Work Experience
+            </h3>
+            <hr
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-once="true"
+            />
           </div>
-          <div id="experiences">
+          <div id="experiences"></div>
+          <div class="subtitle flex" id="projects">
+            <div>
+              <h3
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-once="true"
+              >
+                Projects
+              </h3>
+              <hr
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-once="true"
+              />
+            </div>
+            <div id="apps"></div>
+            <div class="flex justifyCenter">
+              <a class="noUnderline" href="https://github.com/hanskrohn"
+                ><button
+                  class="pointer mobileButtons"
+                  data-aos="zoom-out-up"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                >
+                  Visit Github
+                  <i class="fa fa-github" aria-hidden="true"></i></button
+              ></a>
+            </div>
           </div>
-        <div class = "subtitle flex" id = "projects">
-          <div>
-            <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Projects</h3>
-            <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
-          </div>
-          <div id="apps">
-          </div>
-          <div class = "flex justifyCenter">
-            <a class = "noUnderline" href = "https://github.com/hanskrohn"><button class = "pointer mobileButtons" data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">Visit Github <i class="fa fa-github" aria-hidden="true"></i></button></a>
-          </div>
-        </div>
-        <div class = "subtitle flex" id = "about">
-          <div>
-            <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">About</h3>
-            <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
-          </div>
-          <div class="flex spaceTop width100" id = "flexDirectionColumForMobile">
-            <div class = "flex40 flex">
-              <div class = "image" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-                <img src = "./images/ProfilePicture.jpg" alt = "Hans Krohn"/>
+          <div class="subtitle flex" id="about">
+            <div>
+              <h3
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-once="true"
+              >
+                About
+              </h3>
+              <hr
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-once="true"
+              />
+            </div>
+            <div
+              class="flex spaceTop width100"
+              id="flexDirectionColumForMobile"
+            >
+              <div class="flex40 flex">
+                <div
+                  class="image"
+                  data-aos="fade-right"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                >
+                  <img src="./images/ProfilePicture.jpg" alt="Hans Krohn" />
+                </div>
+              </div>
+              <div class="flex60 content">
+                <p
+                  data-aos="fade-left"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                >
+                  Hi there! My name is Hans, and I'm a software engineer at
+                  Microsoft. I graduated from Western University and completed a
+                  coding bootcamp at FlatIron School, where I honed my skills
+                  and developed my passion for problem-solving and creating
+                  beautiful products. With my focus on solutions, I use code to
+                  express my creativity and bring my ideas to life.
+                </p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                >
+                  If you're interested, I invite you to check out my
+                  <a
+                    class="colorGreen noUnderline"
+                    href="https://medium.com/@hanskrohn70"
+                    >blog</a
+                  >
+                  where I write about tech-related topics that fascinate me and
+                  share my latest learnings. Beyond coding, I'm an avid video
+                  gamer and love exploring new music.
+                </p>
+                <div class="flex justifyCenter">
+                  <a class="noUnderline" href="mailto:hanskrohn70@outlook.com"
+                    ><button
+                      class="pointer mobileButtons"
+                      data-aos="zoom-out-up"
+                      data-aos-offset="200"
+                      data-aos-delay="50"
+                      data-aos-duration="1000"
+                      data-aos-once="true"
+                    >
+                      Get in Contact
+                      <i
+                        class="fa fa-envelope-o"
+                        aria-hidden="true"
+                      ></i></button
+                  ></a>
+                </div>
               </div>
             </div>
-            <div class = "flex60 content">
-              <p data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-                Hi there! My name is Hans, and I'm a software engineer at Microsoft. I graduated from Western University and completed a coding bootcamp at FlatIron School, where I honed my skills and developed my passion for problem-solving and creating beautiful products. With my focus on solutions, I use code to express my creativity and bring my ideas to life.
-              </p>
-              <p data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">
-                If you're interested, I invite you to check out my <a class = "colorGreen noUnderline" href = "https://medium.com/@hanskrohn70" >blog</a> where I write about tech-related topics that fascinate me and share my latest learnings. Beyond coding, I'm an avid video gamer and love exploring new music.
-              </p>
-              <div class = "flex justifyCenter">
-                <a class = "noUnderline" href = 'mailto:hanskrohn70@outlook.com'><button class = "pointer mobileButtons" data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="50"  data-aos-duration="1000" data-aos-once="true">Get in Contact <i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
-              </div>
+          </div>
+          <div class="subtitle flex" id="education">
+            <div>
+              <h3
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-once="true"
+              >
+                Education
+              </h3>
+              <hr
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-once="true"
+              />
+            </div>
+            <div
+              class="education"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-once="true"
+            >
+              <h4>Western University - London ON</h4>
+              <p>Bachelor of Software Engineering - May 2022</p>
+              <h4>FlatIron School - Houston TX</h4>
+              <p>Software Engineering Bootcamp - May 2019 - August 2019</p>
             </div>
           </div>
         </div>
-        <div class = "subtitle flex" id = "education">
+        <div class="subtitle flex" id="skills">
           <div>
-            <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Education</h3>
-            <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+            <h3
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-once="true"
+            >
+              Skills
+            </h3>
+            <hr
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-once="true"
+            />
           </div>
-          <div class = "education" data-aos="fade-right" data-aos-offset="200" data-aos-once="true">
-            <h4>Western University - London ON</h4>
-            <p>Bachelor of Software Engineering - May 2022</p>
-            <h4>FlatIron School - Houston TX</h4>
-            <p>Software Engineering Bootcamp - May 2019 - August 2019</p>
-          </div>
-        </div>
-        </div>
-        <div class = "subtitle flex" id = "skills">
-          <div>
-            <h3 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">Skills</h3>
-            <hr data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
-          </div>
-          <div class = "flex width100 spaceTop flexColumn">
-            <div data-aos="fade-up" data-aos-offset="200" data-aos-once="true" data-aos-delay="0" class="flex33 centerSkills">
+          <div class="flex width100 spaceTop flexColumn">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-once="true"
+              data-aos-delay="0"
+              class="flex33 centerSkills"
+            >
               <h4>Languages:</h4>
               <ul>
+                <li>Go</li>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>HTML/CSS</li>
@@ -102,7 +233,13 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <div data-aos="fade-up" data-aos-offset="200" data-aos-once="true" data-aos-delay="150" class="flex33 centerSkills">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-once="true"
+              data-aos-delay="150"
+              class="flex33 centerSkills"
+            >
               <h4>Frameworks:</h4>
               <ul>
                 <li>AngularJS</li>
@@ -111,7 +248,13 @@
                 <li>Ruby on Rails</li>
               </ul>
             </div>
-            <div data-aos="fade-up" data-aos-offset="200" data-aos-once="true" data-aos-delay="300" class="flex33 centerSkills">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-once="true"
+              data-aos-delay="300"
+              class="flex33 centerSkills"
+            >
               <h4>Other Tools:</h4>
               <ul>
                 <li>Redux</li>
@@ -125,13 +268,17 @@
             </div>
           </div>
         </div>
-       <div class = "footer flex justifyCenter">
-         <a class = "pointer noUnderline" href = "https://github.com/hanskrohn/hanskrohn.github.io"><p>Developed by Hans Krohn <i class="fa fa-github" aria-hidden="true"></i></p></a>
-       </div>
-       <div class = "aside">
-         <div class = "format" id = "aside">
-          
-         </div>
+        <div class="footer flex justifyCenter">
+          <a
+            class="pointer noUnderline"
+            href="https://github.com/hanskrohn/hanskrohn.github.io"
+            ><p>
+              Developed by Hans Krohn
+              <i class="fa fa-github" aria-hidden="true"></i></p
+          ></a>
+        </div>
+        <div class="aside">
+          <div class="format" id="aside"></div>
         </div>
       </div>
     </div>
