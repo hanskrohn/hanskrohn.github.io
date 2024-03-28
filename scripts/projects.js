@@ -2,7 +2,7 @@ const apps = [
   {
     title: "forge-template",
     description:
-      "A CLI tool that simplifies boiler code creation. The tool is out in stable release and demo can be found on Github.",
+      "A CLI tool that simplifies boiler code creation. Demo and setup instructions found on my Github.",
     technologies: "Go",
     githubLink: "https://github.com/hanskrohn/forge-template",
     image: "./images/forge-template.png",
